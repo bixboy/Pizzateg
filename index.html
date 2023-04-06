@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\index-components\navbar.css">
+    <link rel="stylesheet" href="css\index-components\body.css">
+    <link rel="stylesheet" href="css\index-components\back.css">
+    <link rel="stylesheet" href="css\index-components\contents.css">
+    <link rel="stylesheet" href="css\index-components\footer.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Pizzateg</a>
+        <div class="nav-links">
+            <ul class="links">
+                <li class="nav"><a href="index.html" class="liens-nav">Home</a></li>
+                <li  class="nav"><a href="#" class="deroule-li">Consommations</a>
+
+                    <ul class="deroule">
+                        <li class="deroule-txt"><a onclick="scrollTosurconso()" href="#surConso" class="txt"> Sur-consommation </a></li>
+                        <li class="deroule-txt"><a onclick="scrollToconsodura()" href="#consoDura" class="txt" > Consommation responsable </a></li>
+                    </ul>
+                
+                </li>
+                <li class="nav"><a href="recette.html" class="liens-nav">Recettes</a></li>
+                <li  class="nav"><a href="#planification" class="liens-nav">Planification</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="slideshow-container">
+        <div class="slideshow">
+          <img src="resources\NEW_0358.jpg" alt="Slide 1">
+          <img src="resources\buddha_bowl_hiver_1.webp" alt="Slide 2">
+          <img src="resources\25-recettes-healthy-a-adopter-sans-hesiter.jpg" alt="Slide 3">
+          <img src="resources\le-gado-gado-un-plat-healthy-702x336.jpg" alt="Slide 4">
+        </div>
+        <a href="recette.html" class="contact-btn">Voir nos recettes</a>
+      
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+
+      <div class="box-contents">
+        <h1 class="titre-conso"> Deux aspects, deux consommations</h1>
+        <p class="txt-conso"> Il existe plusieurs types de consomations dont deux </p>
+        <div class="contents">
+
+            <div class="surConso">
+
+              <img src="resources\contre_le_gaspillage_alimentaire_les_041656_principale.jpg" alt="SurConso" class="img-conso">
+
+              <div class="txt-box">
+
+                <h1 class="txt-sur" style="font-size: 20px;"> La surconsommation</h1>
+                <p class="txt-sur"> Comme chaque année des millions de tonnes de déchet alimentaire sont due au gaspillage de la surconsomation se qui a pour cause de crée plusieurs problems comme :</p>
+                <p class="txt-sur"> Les conséquences sur l'Environnement qui vont participer aux augmentations des gazes à effets de serre et aux gaspillages de ressources naturelles.</p>
+                <h1 class="txt-sur" style="font-size: 18px;">  On constate que :</h1>
+                  
+                  <ul>
+                    <li class="txt-li-sur"> - 28% des surfaces agricoles mondiales et 250 km³ d’eau sont utilisés chaque année pour produire des aliments que personne ne consomme ;</li>
+                    <li class="txt-li-sur"> - la production de nourriture inutile émet 240 milliards de tonnes de CO2 par an ;</li>
+                    <li class="txt-li-sur"> - 8 % des émissions mondiales de gaz à effet de serre proviennent des déchets alimentaires.</li>
+                  </ul>
+              </div>
+
+            </div>
+
+            <div class="consoDura">
+              <img src="resources\Carbo-alimentation-durable.png" alt="ConsoDura" style="width: 680px; height: 390px;" class="img-conso">
+
+              <div class="txt-box">
+                <h1 class="txt-sur" style="font-size: 20px;"> La consommation durable</h1>
+                <p class="txt-sur"> l’alimentation durable est "l’ensemble des pratiques alimentaires qui visent à nous nourrires en qualité et en quantité suffisante, aujourd’hui et demain, dans le respect de l’environnement, en étant accessible économiquement. </p>
+                <p class="txt-sur"> Les bénéfices de ce type d’alimentation se répercutent donc sur la santé, la planète et la société, mais demande d’adopter de nouveaux gestes.</p>
+                <h1 class="txt-sur" style="font-size: 18px;">  Il faut faire des choix, comme :</h1>
+                    
+                <ul>
+                  <li class="txt-li-sur"> - celui de réduire sa consommation de viande qui est un des premiers facteurs responsables des gaz à effets de serre ;</li>
+                  <li class="txt-li-sur"> - en manger moins mais mieux et la remplacer par des légumineuses par exemple ;</li>
+                  <li class="txt-li-sur"> - Choisir des produits de saison et locaux permet également de réduire notre impact.</li>
+                </ul>
+
+              </div>
+
+            </div>
+              
+        </div>
+      </div>
+
+      <div class="fleche-footer"> <img src="resources\bouton-fleche-droite-du-clavier.png" alt="fotter" class="footer-button"> </div>
+
+      <footer class="box-footer">
+        <div class="content">
+
+          <div class="liens">
+            <ul class="list">
+              <li style="padding: 5px;"><a href="#mentions" class="txt-footer"> Mentions légal</a></li>
+              <li style="padding: 5px;"><a href="#politique" class="txt-footer"> Politique de confidentialité</a> </li>
+              <li style="padding: 5px;"><a href="#contac" class="txt-footer"> nous contacter</a> </li>
+
+            </ul>
+
+            <div class="media">
+              <div class="icon-media">
+                <a href="#instagram" class="icon-box"><img src="resources\instagram.png" alt="instagram" style="height: 29px;"></a>
+                <a href="#facebook" class="icon-box"><img src="resources\facebook.png" alt="facebook" style="height: 29px;"></a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </footer>
+
+</body>
+
+<script>
+    const derouleli = document.querySelector(".deroule-li")
+    const deroule = document.querySelector(".deroule")
+ 
+    derouleli.addEventListener('click',()=>{
+    derouleli.classList.toggle('acti')
+    deroule.classList.toggle('roule')
+    })
+</script>
+
+<script class="slidesShow">
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slideshow")[0].getElementsByTagName("img");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+    }
+    setInterval(function() {
+      plusSlides(1);
+    }, 5000);
+
+  </script>
+  
+
+<script class="navbarJS">
+    var navbar = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 30) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+
+  <script class="fotter">
+
+    const footer = document.querySelector(".box-footer")
+    const footerbutton = document.querySelector(".footer-button")
+     const flechefooter = document.querySelector(".fleche-footer")
+ 
+    footerbutton.addEventListener('click',()=>{
+    footerbutton.classList.toggle('rotate')
+    flechefooter.classList.toggle('rotate')
+    footer.classList.toggle('up')
+    }) 
+
+  </script>
+
+  <script class="scroll">
+
+    function scrollToconsodura() {
+            window.scrollTo({
+                top: 1000,
+                behavior: 'smooth'
+            });
+    }
+
+    function scrollTosurconso() {
+        window.scrollTo({
+            top: 700,
+            behavior: 'smooth',
+        });
+    }   
+
+    document.querySelectorAll('a:not(.liens-nav):not(.contact-btn)').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+        });
+    });
+  </script>
+
+</html>
