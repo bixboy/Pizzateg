@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\planification-components\body.css">
+    <link rel="stylesheet" href="css\planification-components\footer.css">
+    <link rel="stylesheet" href="css\planification-components\navbar.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <a href="index.html" class="logo">Pizzateg</a>
+        <div class="nav-links">
+            <ul class="links">
+                <li class="nav"><a href="index.html">Home</a></li>
+                <li  class="nav"><a href="#conso" class="deroule-li">Consommation</a>
+
+                    <ul class="deroule">
+                        <li class="deroule-txt"><a href="index.html" class="txt"> Sur-consommation </a></li>
+                        <li class="deroule-txt"><a href="index.html" class="txt" > Consommation responsable </a></li>
+                    </ul>
+                
+                </li>
+                <li class="nav"><a href="recette.html">Recettes</a></li>
+                <li  class="nav"><a href="#planification">Planification</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="planification-box">
+
+    </div>
+
+
+    <div class="fleche-footer"> <img src="resources\bouton-fleche-droite-du-clavier.png" alt="fotter" class="footer-button"> </div>
+
+    <footer class="box-footer">
+        <div class="content">
+
+          <div class="liens">
+            <ul class="list">
+              <li style="padding: 5px;"><a href="#mentions" class="txt-footer"> Mentions légal</a></li>
+              <li style="padding: 5px;"><a href="#politique" class="txt-footer"> Politique de confidentialité</a> </li>
+              <li style="padding: 5px;"><a href="#contac" class="txt-footer"> nous contacter</a> </li>
+
+            </ul>
+
+            <div class="media">
+              <div class="icon-media">
+                <a href="#instagram" class="icon-box"><img src="resources\instagram.png" alt="instagram" style="height: 29px;"></a>
+                <a href="#facebook" class="icon-box"><img src="resources\facebook.png" alt="facebook" style="height: 29px;"></a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+    </footer>
+
+    <script>
+        const derouleli = document.querySelector(".deroule-li")
+        const deroule = document.querySelector(".deroule")
+     
+        derouleli.addEventListener('click',()=>{
+        derouleli.classList.toggle('acti')
+        deroule.classList.toggle('roule')
+        })
+    </script>
+
+    <script class="navbarJS">
+        var navbar = document.querySelector('.navbar');
+    
+        window.addEventListener('scroll', function() {
+          if (window.pageYOffset > 30) {
+            navbar.classList.add('scrolled');
+          } else {
+            navbar.classList.remove('scrolled');
+          }
+        });
+      </script>
+    
+    
+      <script class="fotter">
+    
+        const footer = document.querySelector(".box-footer")
+        const footerbutton = document.querySelector(".footer-button")
+         const flechefooter = document.querySelector(".fleche-footer")
+     
+        footerbutton.addEventListener('click',()=>{
+        footerbutton.classList.toggle('rotate')
+        flechefooter.classList.toggle('rotate')
+        footer.classList.toggle('up')
+        }) 
+    
+      </script>
+
+</body>
+</html>
